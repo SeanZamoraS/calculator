@@ -22,7 +22,8 @@ public class BasicCalculator {
             selectedOperation = input.nextInt();
         }
         catch (Exception e) {
-            System.out.println("\nPlease enter a number to select your operation next time.");
+            System.out.println("\nPlease enter a valid operation (1-4) next time.");
+            System.exit(0);
         }
 
         //test
@@ -101,7 +102,7 @@ public class BasicCalculator {
             }
         }
         else {
-            System.out.println("Please enter a valid operation (1-4) next time.");
+            System.out.println("\nPlease enter a valid operation (1-4) next time.");
         }
 
         input.close();
